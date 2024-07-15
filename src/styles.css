@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Ajusta o alinhamento para o topo */
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%; /* Aumenta a largura para 95% */
+    max-width: 1000px; /* Aumenta o máximo permitido para o tamanho do container 1200px*/
+    background: white;
+    padding: 40px; /* Aumenta o padding 40px*/
+    margin: 20px 0; /* Adiciona margens superiores e inferiores 20px 0; */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#city-input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #0056b3;
+}
+
+.map {
+    width: 100%;
+    height: 500px; /* Aumenta a altura do mapa */
+    margin-bottom: 20px;
+}
+
+.weather-info, .cached-cities {
+    margin-top: 20px;
+}
+
+.weather-info h2, .cached-cities h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.weather-info p, .cached-cities p {
+    margin: 5px 0;
+}
+
+.forecast {
+    margin-top: 10px;
+}
+
+.forecast-day {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.forecast-day img {
+    vertical-align: middle;
+}
+
+#weather-icon, #moon-icon {
+    vertical-align: middle;
+}
+
+#forecast-days {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cached-cities {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#cached-cities-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Novo estilo para ocultar a seção de informações de previsão */
+.hidden {
+    display: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Previsão do Tempo</h1>
+        </header>
+        <main>
+            <section class="search">
+                <input type="text" id="city-input" placeholder="Digite a cidade">
+                <button id="search-btn">Consultar</button>
+            </section>
+            <section class="map" id="map"></section>
+            <section class="weather-info hidden">
+                <div class="current-weather">
+                    <h2>Previsão Atual</h2>
+                    <p id="city-name">Nome da cidade: <span></span></p>
+                    <p id="date">Data: <span></span></p>
+                    <p id="current-temp">Temperatura Atual: <span></span></p>
+                    <p id="max-temp">Máxima: <span></span></p>
+                    <p id="min-temp">Mínima: <span></span></p>
+                    <p id="weather-type">Tipo do clima atual: <span></span> <img id="weather-icon" src="" alt="ícone do clima"></p>
+                    <p id="rain-probability">Probabilidade de chuva: <span></span></p>
+                    <p id="moon-phase">Fase da Lua: <span></span> <img id="moon-icon" src="" alt="ícone da Lua"></p>
+                </div>
+            </section>
+            <section class="forecast hidden">
+                <h2>Previsão para os Próximos 3 Dias</h2>
+                <div id="forecast-days"></div>
+            </section>
+            <section class="cached-cities">
+                <h2>Cidades já consultadas</h2>
+                <select id="cached-cities-select"></select>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
